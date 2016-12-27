@@ -31,8 +31,20 @@ Robot behavior inference system based on ROS.
 ### robot_inference
 ROS package
 
-### robot_inference/srv
-Service
+### robot_inference/CMakeLists.txt
+build information
+
+### robot_inference/package.xml
+package information
+
+### robot_inference/package.xml
+package information
+
+### robot_inference/launch/robot_inference.launch
+launch file
+
+### robot_inference/srv/Inference.srv
+service
 
 ### robot_inference/scripts/robot_inference_server.py
 robot inference server
