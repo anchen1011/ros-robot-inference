@@ -14,7 +14,7 @@ Robot behavior inference system based on ROS.
 4. `catkin_make`
 5. `cd src/robot_inference/scripts`
 6. `chmod +x *.py`
-7. `roscd robot_inference'
+7. `roscd robot_inference`
 
 ### run the robot inference system
 
