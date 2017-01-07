@@ -24,7 +24,7 @@ Robot behavior inference system based on ROS.
 3. in a new terminal or screen run `rosrun robot_inference robot_inference_client.py [observation file]` e.g. under robot_inference directory `rosrun robot_inference robot_inference_client.py scripts/test.txt`
 
 #### run from roslaunch
-1. `ROS_HOME=``pwd`` roslaunch robot_inference robot_inference.launch a:="[observation file]"` e.g. under robot_inference directory `ROS_HOME=`pwd` roslaunch robot_inference robot_inference.launch a:="sample/test.txt"`
+1. `ROS_HOME=```pwd``` roslaunch robot_inference robot_inference.launch a:="[observation file]"` e.g. under robot_inference directory `ROS_HOME=```pwd``` roslaunch robot_inference robot_inference.launch a:="sample/test.txt"`
 2. open the log file (printed with roslaunch) and see the result
 
 ## file system
