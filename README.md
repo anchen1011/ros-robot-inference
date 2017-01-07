@@ -14,6 +14,7 @@ Robot behavior inference system based on ROS.
 4. `catkin_make`
 5. `cd src/robot_inference/scripts`
 6. `chmod +x *.py`
+7. `roscd robot_inference'
 
 ### run the robot inference system
 
@@ -23,7 +24,7 @@ Robot behavior inference system based on ROS.
 3. in a new terminal or screen run `rosrun robot_inference robot_inference_client.py [observation file]` e.g. under robot_inference directory `rosrun robot_inference robot_inference_client.py scripts/test.txt`
 
 #### run from roslaunch
-1. `roslaunch robot_inference robot_inference.launch a:="[observation file]"` e.g. under robot_inference directory `roslaunch robot_inference robot_inference.launch a:="scripts/test.txt"`
+1. `ROS_HOME=`pwd` roslaunch robot_inference robot_inference.launch a:="[observation file]"` e.g. under robot_inference directory `ROS_HOME=`pwd` roslaunch robot_inference robot_inference.launch a:="sample/test.txt"`
 2. open the log file (printed with roslaunch) and see the result
 
 ## file system
