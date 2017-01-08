@@ -22,7 +22,7 @@ Robot behavior inference system based on ROS.
 1. in a new terminal or screen run `roscore`
 2. in a new terminal or screen **(build the package first)**, run `rosrun robot_inference robot_inference_server.py`
 3. **[c++ client]** in a new terminal or screen **(build the package first)**, `roscd robot_inference/src`, run `rosrun robot_inference robot_inference_client [observation file]` e.g. under robot_inference/src directory `rosrun robot_inference robot_inference_client test.txt`
-3. **[python client]** in a new terminal or screen **(build the package first)**, `roscd robot_inference`, run `rosrun robot_inference robot_inference_client.py [observation file]` e.g. under robot_inference directory `rosrun robot_inference robot_inference_client sample/test.txt`
+3. **[python client]** in a new terminal or screen **(build the package first)**, `roscd robot_inference`, run `rosrun robot_inference robot_inference_client.py [observation file]` e.g. under robot_inference directory `rosrun robot_inference robot_inference_client.py sample/test.txt`
 
 #### run from roslaunch (using python client)
 1. **build the package**, `roscd robot_inference`
