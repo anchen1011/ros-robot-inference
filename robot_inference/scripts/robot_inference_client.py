@@ -19,7 +19,8 @@ def demonstrate(inference):
     for i in range(0,len(lst)-2,3):
         action = restore(lst[i+2])
         sequence.append((lst[i],lst[i+1],action))
-    return sequence
+    for i in sequence:
+        print(i)
 def load_observations(filename):
     # loads a list of observations saved by save_observations()
     f = open(filename, 'r')
@@ -65,4 +66,4 @@ if __name__ == "__main__":
     print ("Requesting")
     print ("Infered behavior:")
     inf = robot_inference_client(x)
-    print (demonstrate(inf))
+    demonstrate(inf)

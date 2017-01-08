@@ -1,6 +1,6 @@
 <launch>
 
     <node name="robot_inference_server" pkg="robot_inference" type="robot_inference_server.py" />
-    <node name="robot_inference_client" pkg="robot_inference" type="robot_inference_client.py" args="$(arg a)" />
+    <node name="robot_inference_client" pkg="robot_inference" type="robot_inference_client.py" args="$(arg a)" output="screen"/>
 
 </launch>
