@@ -48,6 +48,7 @@ find_package(catkin REQUIRED COMPONENTS
  add_message_files(
    FILES
    Observation.msg
+   Result.msg
  )
 
 ## Generate services in the 'srv' folder
@@ -186,3 +187,9 @@ cmake_minimum_required(VERSION 2.8.3)
 cmake_minimum_required(VERSION 2.8.3)
 project(robot_inference)
 
+##########################
+## Generate executables ##
+##########################
+add_executable(robot_inference_client src/robot_inference_client.cpp)
+target_link_libraries(robot_inference_client ${catkin_LIBRARIES})
+add_dependencies(robot_inference_client robot_inference_gencpp)
