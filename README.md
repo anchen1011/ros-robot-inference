@@ -20,12 +20,14 @@ Robot behavior inference system based on ROS.
 
 #### run from rosrun
 1. in a new terminal or screen run `roscore`
-2. in a new terminal or screen run `rosrun robot_inference robot_inference_server.py`
-3. in a new terminal or screen run `rosrun robot_inference robot_inference_client.py [observation file]` e.g. under robot_inference directory `rosrun robot_inference robot_inference_client.py scripts/test.txt`
+2. in a new terminal or screen (build the package first), `roscd robot_inference`, run `rosrun robot_inference robot_inference_server.py`
+3. [c++ client] in a new terminal or screen (build the package first), `roscd robot_inference/src`, run `rosrun robot_inference robot_inference_client [observation file]` e.g. under robot_inference/src directory `rosrun robot_inference robot_inference_client test.txt`
+3. [python client] in a new terminal or screen (build the package first), `roscd robot_inference`, run `rosrun robot_inference robot_inference_client.py [observation file]` e.g. under robot_inference directory `rosrun robot_inference robot_inference_client sample/test.txt`
 
-#### run from roslaunch
-1. `ROS_HOME=```pwd``` roslaunch robot_inference robot_inference.launch a:="[observation file]"` e.g. under robot_inference directory `ROS_HOME=```pwd``` roslaunch robot_inference robot_inference.launch a:="sample/test.txt"`
-2. open the log file (printed with roslaunch) and see the result
+#### run from roslaunch (using python client)
+1. build the package, `roscd robot_inference`
+2. `ROS_HOME=`` `pwd` `` roslaunch robot_inference robot_inference.launch a:="[observation file]"` e.g. under robot_inference directory `ROS_HOME=`` `pwd` `` roslaunch robot_inference robot_inference.launch a:="sample/test.txt"`
+3. open the log file (printed with roslaunch) and see the result
 
 ## file system
 
@@ -51,7 +53,10 @@ service
 robot inference server
 
 ### robot_inference/scripts/robot_inference_client.py
-robot inference client
+robot inference client (python)
+
+### robot_inference/src/robot_inference_client.cpp
+robot inference client (c++)
 
 ### robot_inference/scripts/test.txt
 test obervations. each line is a pair of coordinates of observed position
