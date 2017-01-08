@@ -1,5 +1,7 @@
 # ros-robot-inference
-Robot behavior inference system based on ROS.
+Robot behavior inference system based on ROS. 
+
+Given the probalistic model of a robot (e.g. robot.py) and the observed position series (e.g. test.txt), infer the actual behavior of the robot.
 
 ## instruction
 
@@ -47,6 +49,9 @@ launch file
 
 ### robot_inference/srv/Inference.srv
 service
+
+### robot_inference/scripts/robot.py
+robot model
 
 ### robot_inference/scripts/robot_inference_server.py
 robot inference server
